@@ -13,7 +13,7 @@ function Element({ element }: ElementProps) {
 
   return (
     <div
-      className="element-placeholder"
+      className="element-box"
       draggable
       onDragStart={handleDragStart}
     >
