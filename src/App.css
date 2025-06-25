@@ -8,24 +8,27 @@
   display: grid;
   grid-template-columns: 1fr min-content min-content min-content 1fr;
   grid-template-rows: min-content 1fr min-content 2fr;
-  height: 100vh;
+  min-height: 100vh;
   background: #eeeeee;
 }
 
 .element-tray {
+  margin: 10px;
   grid-row: 1 / 2;
   grid-column: 2 / 5;
+  width: 1500px;
   height: min-content;
-  width: min-content;
   border-radius: 0 0 8px 8px;
   box-shadow: var(--diffuse-shadow);
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   padding: 24px;
   background: #ffffff;
 }
 
 .form-canvas {
+  margin: 10px;
   grid-row: 3 / 4;
   grid-column: 3 / 4;
   display: grid;
@@ -37,8 +40,46 @@
 }
 
 .element-placeholder {
+  padding: 10px;
+  border: #777 solid 2px;
   background: #dddddd;
-  border-radius: 50%;
-  height: 75px;
-  width: 75px;
+  border-radius: 6px;
+  height: 20px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  grid-column: 1 / -1;
+}
+
+.input-box {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: #666;
+  border: #777 solid 2px;
+  border-radius: 6px;
+}
+
+.input-box.highlight {
+  background-color: lightblue;
+}
+
+.submit-btn {
+  grid-column: 1 / -1;
+  margin: 10px;
+  background-color: rgb(7, 160, 255);
+  color: white;
+  font-weight: bold;
+  border: #777 solid 2px;
+  border-radius: 6px;
 }
