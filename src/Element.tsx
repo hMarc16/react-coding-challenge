@@ -1,4 +1,3 @@
-// https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData
 
 type ElementProps = {
   element: { title: string };
